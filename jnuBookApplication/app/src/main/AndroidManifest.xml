@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    //인터넷접근허용
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MyBook.BookMarketActivity" />
+        <activity android:name=".MyBook.BookDetailActivity" />
+        <activity android:name=".MyBook.AddBookActivity" />
+        <activity android:name=".Activity.JoinActivity" />
+        <activity android:name=".Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            />
+        </activity>
+        <activity android:name=".Activity.HomeActivity" />
+        <activity android:name=".Notice.NoticeActivity" />
+        <activity android:name=".Notice.AddNotice" />
+        <activity android:name=".Activity.SettingActivity" />
+        <activity android:name=".Notice.NoticeText" />
+        <activity android:name=".LectureActivity" />
+        <activity android:name=".AddLectureActivity" />
+        <activity android:name=".LectureDetailActivity"></activity>
+    </application>
+
+</manifest>

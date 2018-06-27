@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.Notice.NoticeText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/book_title"
+                android:text="공지사항"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#D3D3D3"
+            android:layout_marginTop="15dp"
+            android:id="@+id/noti_title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="게시자 : 관리자"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="360dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            android:layout_marginTop="15dp"
+            android:id="@+id/noti_context" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:id="@+id/notice_del"
+            android:text="삭제"
+            android:background="@color/colorPrimary2">
+        </Button>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

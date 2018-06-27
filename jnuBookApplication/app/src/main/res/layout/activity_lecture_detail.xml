@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.LectureDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="강의정보"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:id="@+id/lecture_del"
+            android:text="삭제"
+            android:background="@color/colorPrimary2">
+        </Button>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#D3D3D3"
+        android:layout_marginTop="15dp"
+        android:id="@+id/showlecture_title"/>
+
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:layout_marginTop="15dp"
+        android:id="@+id/pro_name" />
+
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="360dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lecture_context" />
+
+
+</LinearLayout>

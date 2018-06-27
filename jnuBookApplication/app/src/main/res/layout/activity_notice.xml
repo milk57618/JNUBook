@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.Notice.NoticeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/notice_title"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="공지사항"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:id="@+id/notice_add"
+            android:text="등록"
+            android:background="@color/colorPrimary2">
+        </Button>
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/notice_list"
+        android:layout_margin="10dp"
+        android:dividerHeight="10dp"
+        android:divider="#ffffff">
+    </ListView>
+
+</LinearLayout>
